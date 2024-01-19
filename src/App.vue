@@ -6,7 +6,6 @@ import AppFooter from './components/AppFooter.vue';
 export default {
     data() {
         return {
-
         };
     },
     components: {
@@ -21,10 +20,6 @@ export default {
 </script>
 
 <template>
-    <h1>
-        Mia App
-    </h1>
-
     <AppHeader />
 
     <AppMain />
@@ -33,6 +28,7 @@ export default {
 </template>
 
 <style lang="scss">
+@use "assets/scss/partials/reset";
+@use "assets/scss/partials/layout" as *;
 @use "assets/scss/main" as *;
-@import "assets/scss/partials/reset";
 </style>
