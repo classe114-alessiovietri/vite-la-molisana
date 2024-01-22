@@ -3,5 +3,18 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+    plugins: [vue()],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `
+                    @use "src/assets/scss/partials/reset";
+                    @use "src/assets/scss/partials/variables";
+                    @use "src/assets/scss/partials/mixins";
+
+                    $special-color: lightcoral;
+                `,
+            }
+        }
+    }
 })

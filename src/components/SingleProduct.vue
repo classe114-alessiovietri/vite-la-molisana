@@ -5,7 +5,10 @@ export default {
         };
     },
     props: {
-        title: String,
+        title: {
+            type: String,
+            default: '[NOME PRODOTTO]'
+        },
         image: String
     }
 }
@@ -35,7 +38,7 @@ export default {
     }
 
     h2 {
-        color: #0F346F;
+        color: $special-color;
         font-size: 1rem;
     }
 }

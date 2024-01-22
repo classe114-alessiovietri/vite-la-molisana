@@ -28,7 +28,6 @@ export default {
 </template>
 
 <style lang="scss">
-@use "assets/scss/partials/reset";
 @use "assets/scss/partials/layout" as *;
 @use "assets/scss/main" as *;
 </style>
